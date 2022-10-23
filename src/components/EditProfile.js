@@ -142,7 +142,7 @@ const EditProfile = () => {
               onChange={(e) => {
                 setname(e.target.value);
               }}
-              placeholder="example@domain.com"
+              placeholder="name"
               className="w-full rounded-md border  bg-[#16181c] py-3 px-6 text-base font-medium text-white outline-none focus:shadow-md"
             />
           </div>
@@ -152,14 +152,14 @@ const EditProfile = () => {
             </label>
 
             <textarea
-              type="email"
-              name="email"
+              type="text"
+              name=""
               value={bio}
               onChange={(e) => {
                 setbio(e.target.value);
               }}
-              id="email"
-              placeholder="example@domain.com"
+              id=""
+              placeholder="bio"
               className="w-full rounded-md border  bg-[#16181c] py-3 px-6 text-base font-medium text-white outline-none focus:shadow-md"
             ></textarea>
           </div>
@@ -243,14 +243,5 @@ const EditProfile = () => {
     </Layout>
   );
 };
-//    struct Artist {
-//     uint256 artistId;
-//     string name;
-//     address payable _address;
-//     uint256 balance;
-//     string image;
-//     string profile;
-//     string coverImage;
-// }
 
 export default EditProfile;
