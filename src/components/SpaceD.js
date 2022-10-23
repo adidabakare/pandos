@@ -384,8 +384,10 @@ const SpaceD = () => {
           <div className="w-max bg-white bg-opacity-10 ring-1 ring-white ring-opacity-40 backdrop-blur-lg rounded-2xl px-3 py-1 m-auto">
             {state.spacename}
           </div>
-          <div className="w-max mt-2 bg-white bg-opacity-10 ring-1 ring-white ring-opacity-40 backdrop-blur-lg rounded-2xl px-3 py-1 m-auto">
-            {transcript}
+          <div className="w-9/12 mx-auto">
+            <div className="w-9/12 mt-2 bg-white bg-opacity-10 ring-1 ring-white ring-opacity-40 backdrop-blur-lg rounded-2xl px-3 py-1 m-auto">
+              {transcript}
+            </div>
           </div>
           {/* <p className="text-white">{}</p> */}
 
@@ -483,7 +485,7 @@ const SpaceD = () => {
 
           {
             <>
-              <div className="relative  w-4/12 md:w-full  bg-white bg-opacity-10 ring-1 ring-white ring-opacity-40 backdrop-blur-lg rounded-2xl px-3 py-3">
+              <div className="relative  w-full md:w-full  bg-white bg-opacity-10 ring-1 ring-white ring-opacity-40 backdrop-blur-lg rounded-2xl px-3 py-3">
                 <div class="flex overflow-x-auto items-center space-x-8  ">
                   {emojis.map((emojies, index) => (
                     <div onClick={() => {}}>
@@ -506,7 +508,7 @@ const SpaceD = () => {
                   <div className="absolute right-0 h-full w-32 bg-gradient-to-l rounded-tr-2xl rounded-br-2xl from-gray-900"></div>
                 </div>
               </div>
-              <div className="flex flex-col  md:flex-row justify-between mt-4 md:space-x-3">
+              <div className="flex flex-col  mb-3 md:mb-0 md:flex-row justify-between mt-4 md:space-x-3">
                 <Button
                   onClick={() => {
                     microphoneState();
