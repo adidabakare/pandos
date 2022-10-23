@@ -168,13 +168,11 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## 🎊 Future Updates
 
-- [ ] We are working on our adding more web3 storage platforms
+- [ ] Use pandora coin to buy or rent free available premium features such as upgraded streaming quality or content exclusive channels
 
-- [ ] NFTs for all media type (Videos, Audio and PDFs)
+- [ ] Users can follow artists and receive notifications when new songs or podcasts are released.
 
-- [ ] Working of creating our own decentralize storage system
-
-- [ ] Get tokens as your share files
+- [ ] A live video streaming feature that allows artists to interact with their fans or followers in real time.
 
 ## 🧑🏻 Author
 
