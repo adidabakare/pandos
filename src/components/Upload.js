@@ -610,7 +610,7 @@ const Upload = () => {
                 onChange={(e) => {
                   setmusictitle(e.target.value);
                 }}
-                placeholder="song title"
+                placeholder="podcast title"
                 className="w-full rounded-xl border mt-3 bg-[#16181c] py-3 px-6 text-base font-medium text-white outline-none focus:shadow-md"
               />
             </div>

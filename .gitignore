@@ -40,7 +40,7 @@ coverage
 coverage.json
 typechain
 typechain-types
-
+configsec.txt
 #Hardhat files
 cache
 artifacts

@@ -23,7 +23,7 @@ module.exports = {
       accounts: [privateKey],
     },
     matic: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS",
+      url: "https://boldest-soft-liquid.matic-testnet.discover.quiknode.pro/d62ffe0ea3882f65089fb15568ed7d69f2ac248",
       accounts: [privateKey],
     },
     mainet: {

@@ -105,27 +105,6 @@ const EditProfile = () => {
         <div className="  hidden lg:flex lex-row font-Montserrat items-center space-x-5 text-2xl">
           <p className="text-lg font-Montserrat">Create Profile</p>
         </div>
-        <div className="flex flex-row space-x-3">
-          {/* <Input clearable bordered placeholder="search" /> */}
-          {/* {web3Provider ? ( */}
-          <Button
-            onClick={() => {
-              disconnect();
-            }}
-          >
-            Disconnect
-          </Button>
-          {/* ) : ( */}
-          <Button
-            onClick={() => {
-              connect();
-            }}
-            color="secondary"
-          >
-            connect
-          </Button>
-          {/* )} */}
-        </div>
       </div>
 
       <div class="flex items-center justify-center w-full">
@@ -165,7 +144,11 @@ const EditProfile = () => {
           </div>
 
           <div class="max-w-full mb-6">
-            <label class="flex justify-center w-full h-32 px-4 transition bg-white dark:bg-gray-800 border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
+            <label for="email" className="pb-5 mb-2">
+              Profile Image
+            </label>
+
+            <label class="flex justify-center w-full h-32 px-4 transition bg-white dark:bg-[#16181c] border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
               <span class="flex items-center space-x-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

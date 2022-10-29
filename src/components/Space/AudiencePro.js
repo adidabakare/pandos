@@ -3,9 +3,9 @@ import toast, { Toaster } from "react-hot-toast";
 import { Modal, Input, Button, Text, Loading } from "@nextui-org/react";
 import { ethers } from "ethers";
 import { AuthContext } from "../../utils/AuthProvider";
-
+import pakari from "../../assets/img/pakari.jpeg";
 const AudiencePro = (props) => {
-  console.log("props address", props.id);
+  console.log("props address", props.image);
   const [visible2, setVisible2] = React.useState(false);
   const [amount, setamount] = useState("");
   const [isloading, setisloading] = useState(false);
@@ -108,7 +108,11 @@ const AudiencePro = (props) => {
         </div>
         <img
           src={props.image}
-          className="object-cover  h-36 w-36 rounded-3xl"
+          // src={pakari}
+          // src={
+          //   "https://drive.google.com/uc?export=view&id=1AOkHvZ1g-Nx7ibaZvEOkaMb0rPmU67xk"
+          // }
+          className="object-cover h-36 w-36 rounded-3xl"
         />
         <div class="w-full px-4 py-1 rounded-b-3xl absolute bottom-0 bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
           <p className="text-white text-center">{props.name}</p>
