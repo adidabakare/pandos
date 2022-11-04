@@ -45,7 +45,7 @@ const Dashboard = () => {
   const forceUpdate = useForceUpdate();
   const objectConfig = useMemo(
     () => ({
-      // Config for a single flying object which uld fly in a moment
+      // Config for a single flying object which ufly in a moment
       right: {
         fromValue: pos == "true" ? 0 : 800,
         toValue: 600,
