@@ -2,7 +2,6 @@
 
 </p>
 <h1 align="center">🌟 Pandos 🎧 🎙️ 🌟</h1>
-<p align="center">Start your project with Single Command</p>
 
 <p align="center">
 <a href="https://github.com/adidabakare/pandos/blob/master/LICENSE" title="License">
@@ -13,9 +12,6 @@
 </a>
 <a href="https://github.com/adidabakare/pandos" title="Stars">
 <img src="https://img.shields.io/github/stars/adidabakare/pandos" alt="pandos Stars"/>
-</a>
-<a href="https://img.shields.io/github/stars/adidabakare/pandos/issues" title="Issues">
-<img src="  https://img.shields.io/github/issues/adidabakare/pandos" alt="pandos Issues"/>
 </a>
 
 </a>
