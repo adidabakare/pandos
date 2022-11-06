@@ -1,1 +1,1 @@
-export const metaspaceAddress = "0x525aF37024DB8028F629ec253F3F1139a04f1953";
+export const metaspaceAddress = "0xa502010f764FB3D148ce04Bfd4bD5Dfc09e9BB30";

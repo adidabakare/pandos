@@ -1,4 +1,4 @@
-//  icons
+//  icon
 import {
   FiYoutube,
   FiInstagram,
