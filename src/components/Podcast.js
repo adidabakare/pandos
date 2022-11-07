@@ -44,8 +44,10 @@ const Podcast = () => {
 
   // console.log(album?.music?.artist);
   async function getMusics() {
-    const music = await contract?.getArt(1);
-    setmusic(music.filter((items) => items.isPodcast === true));
+    const music = await contract?.getArt(3);
+    setmusic(
+      music.filter((items) => items.isPodcast === true && items.title !== "")
+    );
   }
 
   async function getArtist() {

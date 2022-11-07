@@ -434,17 +434,6 @@ const SpaceD = () => {
           </div>
           <div className="flex flex-row items-center space-x-3">
             <p className="text-white text-xl pt-2 pb-2">Audience</p>
-            <span className="bg-green-400 text-2xl px-2  text-white rounded-xl">
-              {state.iAmModerator === true
-                ? Object.keys(state.identities).filter(
-                    (identity) =>
-                      typeof state.peerState[identity] !== "undefined"
-                  ).length - 1
-                : Object.keys(state.identities).filter(
-                    (identity) =>
-                      typeof state.peerState[identity] !== "undefined"
-                  ).length}
-            </span>
           </div>
           <div
             className={`grid md:grid-cols-5 grid-cols-2 gap-4 ${

@@ -30,9 +30,13 @@ const Cover = () => {
   // console.log(mId);
   async function getAlbum() {
     const album = await signer?.getAlbums();
-    const filt = album.filter((items) => items?.albumId?.toString() == id);
+    const filt = album.filter(
+      (items) => items?.albumId?.toString() == id && items.title !== ""
+    );
     const music = await signer?.getArt(filt[0]?.albumId?.toString());
-    setmusic(music);
+    // console.log(music);
+    const musicfilter = music.filter((items) => items?.title !== "");
+    setmusic(musicfilter);
     setalbum(filt[0]);
   }
 
