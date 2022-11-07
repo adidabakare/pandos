@@ -15,12 +15,12 @@ const NFT = () => {
     useContext(AuthContext);
   const [nfts, setnft] = useState([]);
   async function loadNFTS() {
-    const nft = await signer?.fetchMarketItems();
+    const nft = await contract?.fetchMarketItems();
     setnft(nft);
   }
   useEffect(() => {
     loadNFTS();
-  }, [signer]);
+  }, [contract]);
 
   async function buyNft(nft) {
     const price = ethers.utils.parseUnits(nft.price.toString(), "ether");
