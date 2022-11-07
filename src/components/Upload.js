@@ -226,6 +226,7 @@ const Upload = () => {
   };
 
   useEffect(() => {
+    connect();
     loadAlbums();
     getSingleUser();
   }, [signer, fileready, fileready2, active]);
