@@ -23,7 +23,7 @@
 <p align="center">
     <a href="https://www.youtube.com/watch?v=T014y08VT5I" title="">🖥️ Video</a>
     .
-    <a href="https://youtu.be/ud4P45zhCk0" title="">🔗 Website</a>
+    <a href="https://pandos.netlify.app/" title="">🔗 Website</a>
     ·
     <a href="https://github.com/adidabakare/pandos" title="">📂 Repo</a>
     ·
