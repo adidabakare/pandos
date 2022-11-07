@@ -30,8 +30,6 @@ typechain
 typechain-types
 secret.txt
 #Hardhat files
-cache
-artifacts
 
 
 node_modules
@@ -42,6 +40,4 @@ typechain
 typechain-types
 configsec.txt
 #Hardhat files
-cache
-artifacts
 
