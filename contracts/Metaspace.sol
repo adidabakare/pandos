@@ -132,15 +132,8 @@ contract Metaspace is ERC721URIStorage {
         bool _isPodcast,
         string memory _title
     ) public {
-        UserMusicCount[msg.sender][_albumId] =
-            UserMusicCount[msg.sender][_albumId] +
-            1;
         musicCount.increment();
-
         Music storage _music = music[_albumId][musicCount.current()];
-        Music storage _userMusic_ = UserMusic[_albumId][
-            UserMusicCount[msg.sender][_albumId]
-        ];
         Artist storage _artist = artist[_artistId];
         _music.musicId = musicCount.current();
         _music.artist._address = _artist._address;

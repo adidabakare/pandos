@@ -156,6 +156,7 @@ const Upload = () => {
       return;
     }
     setisfileuploading2(true);
+    console.log(albumid, users?.artistId?.toString(), musictitle);
     let transaction = await signer.addArt(
       albumid,
       users?.artistId?.toString(),
@@ -164,6 +165,7 @@ const Upload = () => {
       active == 2 ? true : false,
       musictitle
     );
+
     let txReceipt = await transaction.wait();
     const [transferEvent] = txReceipt.events;
     setmusictitle("");
@@ -416,7 +418,13 @@ const Upload = () => {
           </div>
         ))}
       </div>
-
+      {/* <button
+        onClick={() => {
+          connect();
+        }}
+      >
+        CONNECT
+      </button> */}
       {active === 1 ? (
         <>
           <Collapse

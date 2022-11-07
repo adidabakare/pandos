@@ -38,18 +38,21 @@ const Music = () => {
 
   // console.log(mId);
   async function getAlbum() {
-    const album = await signer?.getAlbums();
+    const album = await contract?.getAlbums();
     setalbum(album.filter((items) => items.isPodcast === false));
   }
 
   // console.log(album?.music?.artist);
   async function getMusics() {
-    const music = await signer?.getArt(1);
-    setmusic(music.filter((items) => items.isPodcast === false));
+    const music = await contract?.getArt(1);
+    console.log(music);
+    setmusic(
+      music.filter((items) => items.isPodcast === false && items.title !== "")
+    );
   }
 
   async function getArtist() {
-    const artist = await signer?.fetchAllUsers();
+    const artist = await contract?.fetchAllUsers();
     setartist(artist);
     console.log("artist-----", artist);
   }
@@ -58,7 +61,7 @@ const Music = () => {
     getAlbum();
     getMusics();
     getArtist();
-  }, [signer]);
+  }, [contract]);
   return (
     <Layout>
       <div className="flex flex-row justify-between my-8 items-center">

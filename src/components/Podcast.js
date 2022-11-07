@@ -38,18 +38,18 @@ const Podcast = () => {
 
   // console.log(mId);
   async function getAlbum() {
-    const album = await signer?.getAlbums();
+    const album = await contract?.getAlbums();
     setalbum(album.filter((items) => items.isPodcast === true));
   }
 
   // console.log(album?.music?.artist);
   async function getMusics() {
-    const music = await signer?.getArt(1);
+    const music = await contract?.getArt(1);
     setmusic(music.filter((items) => items.isPodcast === true));
   }
 
   async function getArtist() {
-    const artist = await signer?.fetchAllUsers();
+    const artist = await contract?.fetchAllUsers();
     setartist(artist);
     console.log("artist-----", artist);
   }
@@ -58,12 +58,12 @@ const Podcast = () => {
     getAlbum();
     getMusics();
     getArtist();
-  }, [signer]);
+  }, [contract]);
   return (
     <Layout>
       <div className="flex flex-row justify-between my-8 items-center">
         <div className="  hidden lg:flex lex-row font-Montserrat items-center space-x-5 text-2xl">
-          <p className="text-xl font-Montserrat">Music</p>
+          <p className="text-xl font-Montserrat">Podcast</p>
         </div>
         <div>
           <Input clearable bordered placeholder="search" />
